@@ -2,7 +2,7 @@ import c from "./Footer.module.scss"
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div className={c.footer}></div>
   )
 }
 

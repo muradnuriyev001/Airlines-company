@@ -1,11 +1,14 @@
 .header {
   background-color: var(--blue-color);
-  padding: 40px 400px;
+  padding: 30px 400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: sans-serif;
-  position: relative;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  z-index: 2000;
+  top: 0;
 }
 
 .logo a {
