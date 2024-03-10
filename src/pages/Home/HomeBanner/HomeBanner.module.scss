@@ -1,0 +1,153 @@
+.homeBanner {
+  background: url("../../../assets/img/Home/Banner/banner-shape.png");
+  background-color: var(--blue-color);
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  justify-content: space-between;
+  padding: 0px 250px;
+}
+
+.bannerInfo {
+  width: 50%;
+  .bannerText1 {
+    color: var(--orange-color2);
+    font-size: 30px;
+    margin: 20px 0px;
+    font-weight: 800;
+  }
+  .bannerText2 {
+    color: var(--white-color);
+    font-size: 40px;
+    margin: 20px 0px;
+    font-weight: 900;
+  }
+  .bannerText3 {
+    color: var(--white-color);
+    margin: 20px 0px;
+    line-height: 2;
+  }
+
+  .bannerButtons {
+    display: flex;
+    margin: 20px 0px;
+    .contact {
+      display: flex;
+      align-items: center;
+      background-color: var(--orange-color2);
+      color: var(--blue-color);
+      padding: 20px 30px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: 0.5s all;
+      &:hover {
+        background-color: var(--blue-color2);
+        color: var(--white-color);
+        a {
+          color: var(--white-color);
+        }
+      }
+    }
+    .about {
+      display: flex;
+      align-items: center;
+      border-radius: 30px;
+      color: var(--white-color);
+      border: 3px solid var(--orange-color2);
+      padding: 20px 30px;
+      margin-left: 15px;
+      font-weight: 600;
+      transition: 0.5s all;
+      &:hover {
+        background-color: var(--orange-color2);
+        color: var(--blue-color);
+      }
+    }
+  }
+}
+
+.bannerLogo {
+  animation: bounce 3s infinite cubic-bezier(0, 0, 1, 1) 0.2s;
+}
+
+/*Responsive*/
+@media only screen and (max-width: 1800px) {
+  .homeBanner {
+    padding: 0px 150px;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .homeBanner {
+    padding: 0px 100px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .homeBanner {
+    padding: 0px 50px;
+  }
+  .bannerInfo {
+    .bannerText1 {
+      font-size: 25px;
+    }
+    .bannerText2 {
+      font-size: 30px;
+    }
+  }
+  .bannerLogo {
+    width: 80%;
+    text-align: center;
+  }
+  .bannerLogo img {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .homeBanner {
+    flex-direction: column;
+    padding: 50px 50px;
+  }
+  .bannerInfo {
+    width: 100%;
+  }
+  .bannerLogo {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .bannerLogo img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .bannerInfo {
+    .bannerText1 {
+      font-size: 20px;
+    }
+    .bannerText2 {
+      font-size: 25px;
+    }
+    .bannerText3 {
+      font-size: 14px;
+    }
+    .bannerButtons {
+      .contact {
+        padding: 10px 20px;
+      }
+      .about {
+        padding: 10px 20px;
+      }
+    }
+  }
+}
+
+/*Animations*/
+@keyframes bounce {
+  0% {
+    transform: rotate(0) translate(-10px) rotate(0);
+  }
+  100% {
+    transform: rotate(360deg) translate(-10px) rotate(-360deg);
+  }
+}

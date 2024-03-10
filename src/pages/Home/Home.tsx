@@ -1,7 +1,11 @@
 import c from "./Home.module.scss"
+import HomeBanner from "./HomeBanner/HomeBanner"
+
 const Home = () => {
   return (
-    <div>Home</div>
+    <div className={c.home}>
+      <HomeBanner/>
+    </div>
   )
 }
 
