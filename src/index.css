@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --blue-color: #19232d;
+  --blue-color2: #2c3742;
+  --orange-color: #bea47b;
+  --orange-color2: #dcbb87;
+  --white-color: #fdfdfd;
+}

@@ -1,0 +1,98 @@
+.navigations {
+  display: flex;
+  align-items: center;
+  .burger {
+    color: var(--white-color);
+    font-size: 40px;
+  }
+  .navList ul {
+    display: flex;
+    li {
+      color: var(--white-color);
+      margin: 0px 10px;
+      font-weight: 600;
+      transition: 0.5s all;
+      &:hover {
+        color: var(--orange-color2);
+      }
+    }
+  }
+
+  .book a {
+    transition: 0.5s all;
+    display: flex;
+    align-items: center;
+    margin: 0px 20px;
+    background-color: var(--orange-color);
+    padding: 10px;
+    border-radius: 30px;
+    li {
+      color: var(--blue-color);
+      font-size: 16px;
+      font-weight: 750;
+      margin: 0px 10px;
+    }
+    svg {
+      color: var(--blue-color);
+      font-size: 30px;
+      transition: 0.5s all;
+    }
+    &:hover {
+      background-color: var(--blue-color2);
+      li {
+        color: var(--white-color);
+      }
+      svg {
+        color: var(--white-color);
+      }
+    }
+  }
+}
+
+/*Responsive*/
+@media only screen and (min-width: 1024px) {
+  .burger {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .navList {
+    animation: slideIn 1s;
+    overflow: hidden;
+    background-color: var(--orange-color2);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px 0px;
+    text-align: center;
+    ul {
+      flex-direction: column;
+      li {
+        padding: 10px 0px;
+        font-size: 20px;
+        font-weight: 800;
+      }
+    }
+  }
+  .burger {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .book {
+    display: none;
+  }
+}
+
+/*Animations*/
+
+@keyframes slideIn {
+  0% {
+    max-height: 50px;
+  }
+  100% {
+    max-height: 250px;
+  }
+}
