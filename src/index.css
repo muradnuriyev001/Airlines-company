@@ -13,3 +13,20 @@
   --orange-color2: #dcbb87;
   --white-color: #fdfdfd;
 }
+
+/* Scrollbar settings*/
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #222222;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--orange-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff7f00;
+}

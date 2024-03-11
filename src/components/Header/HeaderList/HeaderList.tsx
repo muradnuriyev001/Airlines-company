@@ -8,8 +8,8 @@ import { MdOutlineAirplaneTicket } from "react-icons/md";
 import { IoMenu } from "react-icons/io5";
 
 const HeaderList = () => {
-  const [isActive, setIsActive] = useState(true);
-
+  const [isActive, setIsActive] = useState(false);
+  
   const location = useLocation();
 
   const handleActive = () => {
