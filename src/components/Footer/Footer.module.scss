@@ -5,5 +5,90 @@
   // background-repeat: no-repeat;
   min-height: 500px;
   background-position: center;
-  background-color: var(--blue-color);
+  background-color: var(--blue-color2);
+  font-family: sans-serif;
+  display: flex;
+}
+
+.left {
+  .logo a {
+    display: flex;
+    align-items: center;
+    svg {
+      color: var(--orange-color2);
+      font-size: 40px;
+    }
+    p {
+      color: var(--white-color);
+      font-size: 30px;
+      margin: 0px 10px;
+      font-weight: 700;
+    }
+    span {
+      color: var(--orange-color2);
+      margin: 0px 3px;
+    }
+  }
+
+  .text {
+    p {
+      font-size: 15px;
+      margin: 20px 0px;
+      color: var(--white-color);
+    }
+  }
+
+  .icons {
+    svg {
+      font-size: 40px;
+      color: white;
+      margin-right: 10px;
+      border: 2px solid var(--orange-color2);
+      border-radius: 50%;
+      padding: 5px;
+      transition: 0.5s all;
+      cursor: pointer;
+      &:hover {
+        background-color: var(--orange-color2);
+      }
+    }
+  }
+}
+
+.links {
+  p {
+    font-size: 35px;
+    color: var(--white-color);
+    font-family: "Times New Roman", Times, serif;
+  }
+  svg {
+    color: var(--orange-color2);
+    font-size: 25px;
+  }
+  a {
+    color: var(--white-color);
+    font-size: 15px;
+    font-weight: 800;
+  }
+  li {
+    margin: 15px 0px;
+    transition: 0.5s all;
+    &:hover {
+      margin-left: 5px;
+      color: var(--orange-color2);
+    }
+  }
+}
+
+
+.contact{
+  p {
+    font-size: 35px;
+    color: var(--white-color);
+    font-family: "Times New Roman", Times, serif;
+  }
+  svg {
+    color: var(--orange-color2);
+    font-size: 25px;
+  }
 }
