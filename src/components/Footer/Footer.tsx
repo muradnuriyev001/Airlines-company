@@ -16,7 +16,7 @@ import { FaMapLocationDot, FaPhone, FaClock } from "react-icons/fa6";
 
 const links = [
   { "About Us": "about" },
-  { "FAQ's": "faq" },
+  { "FAQ's": "about" },
   { "Terms Of Service": "terms" },
   { "Privacy policy": "policy" },
   { "Our Services": "out-service" },
@@ -39,11 +39,11 @@ const contactsText = [
 const contactsIcons = [FaMapLocationDot, FaPhone, IoMailSharp, FaClock];
 
 const getStarted = [
-  { Register: "register" },
-  { "Our package": "our-package" },
-  { "Contact Us": "contact0-us" },
-  { "Private jet": "jets" },
-  { Career: "out-service" },
+  { Register: "contact" },
+  { "Our package": "contact" },
+  { "Contact Us": "contact" },
+  { "Private jet": "planes" },
+  { Career: "contact" },
 ];
 
 const Footer = () => {

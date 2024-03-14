@@ -3,7 +3,10 @@
   align-items: center;
   .burger {
     color: var(--white-color);
+    background-color: transparent;
+    border: none;
     font-size: 40px;
+    height: 40px;
     cursor: pointer;
   }
   .navList ul {

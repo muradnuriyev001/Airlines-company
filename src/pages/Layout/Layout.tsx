@@ -6,6 +6,7 @@ import Footer from "../../components/Footer/Footer";
 import Marquee from "../../components/Marquee/Marquee";
 import Loader from "../../components/Loader/Loader";
 import SubscribeNews from "../../components/SubscribeNews/SubscribeNews";
+import TopButton from "../../components/TopButton/TopButton";
 
 const Layout = () => {
   //Loader Logic
@@ -25,14 +26,17 @@ const Layout = () => {
   }, [pathname]);
 
   return (
-    <div>
-      {loaderState && <Loader />}
-      <Marquee />
-      <Header />
-      <Outlet />
-      <SubscribeNews />
-      <Footer />
-    </div>
+    <>
+      <div>
+        {loaderState && <Loader />}
+        <Marquee />
+        <Header />
+        <Outlet />
+        <SubscribeNews />
+        <Footer />
+      </div>
+      <TopButton />
+    </>
   );
 };
 

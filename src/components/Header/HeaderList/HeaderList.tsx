@@ -57,7 +57,9 @@ const HeaderList = () => {
         </NavLink>
       </div>
 
-      <IoMenu onClick={handleActive} className={c.burger} />
+      <button onClick={handleActive} className={c.burger}>
+        <IoMenu  />
+      </button>
     </div>
   );
 };
