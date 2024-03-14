@@ -6,6 +6,7 @@
   flex-direction: column;
   background-color: var(--blue-color);
   font-family: sans-serif;
+  text-align: center;
   p {
     color: var(--orange-color);
     font-size: 50px;
@@ -26,6 +27,23 @@
     &:hover {
       background-color: var(--blue-color2);
       color: white;
+    }
+  }
+}
+
+/*Responsive*/
+
+@media only screen and (max-width: 1024px) {
+  .notFound {
+    p {
+      font-size: 30px;
+    }
+    span {
+      font-size: 17px;
+    }
+    button {
+      padding: 20px 30px;
+      font-size: 16px;
     }
   }
 }

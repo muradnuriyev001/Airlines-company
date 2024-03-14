@@ -1,13 +1,17 @@
 .footer {
-  // background: url(../../assets/img/Footer/Footer.jpg);
-  // background-position: center;
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  min-height: 500px;
+  background: url(../../assets/img/Footer/FooterPlane.jpg);
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: var(--blue-color2);
   font-family: sans-serif;
-  display: flex;
+}
+
+.footerContent {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 80px 300px;
 }
 
 .left {
@@ -35,6 +39,7 @@
       font-size: 15px;
       margin: 20px 0px;
       color: var(--white-color);
+      width: 75%;
     }
   }
 
@@ -55,7 +60,8 @@
   }
 }
 
-.links {
+.links,
+.getStart {
   p {
     font-size: 35px;
     color: var(--white-color);
@@ -68,7 +74,7 @@
   a {
     color: var(--white-color);
     font-size: 15px;
-    font-weight: 800;
+    font-weight: 650;
   }
   li {
     margin: 15px 0px;
@@ -80,8 +86,7 @@
   }
 }
 
-
-.contact{
+.contact {
   p {
     font-size: 35px;
     color: var(--white-color);
@@ -90,5 +95,91 @@
   svg {
     color: var(--orange-color2);
     font-size: 25px;
+  }
+
+  .icons {
+    p {
+      font-family: "Times New Roman", Times, serif;
+    }
+    div {
+      margin: 15px 0px;
+      display: flex;
+      span {
+        color: white;
+        transition: 0.5s all;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 650;
+        margin-left: 15px;
+        &:hover {
+          color: var(--orange-color2);
+        }
+      }
+    }
+  }
+}
+
+.line {
+  border-top: 1px dashed var(--orange-color2);
+  p {
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    padding: 25px 0px;
+  }
+}
+
+/*Responsive*/
+
+@media only screen and (max-width: 1560px) {
+  .footerContent {
+    padding: 100px 250px;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .footerContent {
+    padding: 100px 200px;
+  }
+}
+
+@media only screen and (max-width: 1330px) {
+  .footerContent {
+    padding: 100px 150px;
+  }
+}
+
+@media only screen and (max-width: 1330px) {
+  .footerContent {
+    padding: 100px 50px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .footerContent {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+    padding: 50px 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footerContent {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    padding: 50px 50px;
+  }
+  .links,
+  .getStart,
+  .contact {
+    p {
+      font-size: 25px;
+    }
+  }
+
+  .icons {
+    span {
+      font-size: 14px !important;
+    }
   }
 }

@@ -7,7 +7,7 @@
   height: 100vh;
   width: 100vw;
   background-color: var(--blue-color);
-  opacity: 0.8;
+  opacity: 0.95;
 }
 .loader {
   width: 64px;
