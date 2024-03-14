@@ -1,0 +1,134 @@
+.subscribe {
+  background-color: var(--orange-color2);
+  display: flex;
+  padding: 100px 380px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  h4 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  p {
+    color: rgb(61, 61, 61);
+    margin-top: 10px;
+    width: 90%;
+  }
+}
+
+.input {
+  position: relative;
+  input {
+    width: 500px;
+    padding: 20px 20px;
+    border-radius: 50px;
+    border: none;
+  }
+  button {
+    color: white;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 13px;
+    background-color: var(--blue-color);
+    border-radius: 50px;
+    transition: 0.5s all;
+    cursor: pointer;
+    border: 2px solid var(--blue-color);
+    svg {
+      font-size: 25px;
+      margin-right: 5px;
+    }
+    &:hover {
+      background: var(--orange-color2);
+    }
+  }
+}
+
+/*Responsive*/
+
+@media only screen and (max-width: 1800px) {
+  .subscribe {
+    padding: 100px 300px;
+  }
+}
+@media only screen and (max-width: 1630px) {
+  .subscribe {
+    padding: 100px 250px;
+  }
+}
+@media only screen and (max-width: 1530px) {
+  .subscribe {
+    padding: 100px 200px;
+  }
+}
+@media only screen and (max-width: 1430px) {
+  .subscribe {
+    padding: 100px 150px;
+  }
+}
+@media only screen and (max-width: 1330px) {
+  .subscribe {
+    padding: 100px 80px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .subscribe {
+    padding: 100px 20px;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .input {
+    margin-top: 50px;
+    input {
+      width: 600px;
+    }
+  }
+}
+@media only screen and (max-width: 650px) {
+  .subscribe {
+    padding: 50px 20px;
+  }
+  .text {
+    h4 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .input {
+    input {
+      width: 500px;
+    }
+  }
+}
+@media only screen and (max-width: 550px) {
+  .input {
+    input {
+      width: 400px;
+    }
+  }
+}
+@media only screen and (max-width: 430px) {
+  .subscribe {
+    padding: 50px 10px;
+  }
+  .input {
+    input {
+      width: 320px;
+    }
+  }
+}
+@media only screen and (max-width: 360px) {
+  .input {
+    input {
+      width: 300px;
+    }
+  }
+}

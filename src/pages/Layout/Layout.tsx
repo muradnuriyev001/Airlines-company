@@ -5,6 +5,7 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import Marquee from "../../components/Marquee/Marquee";
 import Loader from "../../components/Loader/Loader";
+import SubscribeNews from "../../components/SubscribeNews/SubscribeNews";
 
 const Layout = () => {
   //Loader Logic
@@ -29,6 +30,7 @@ const Layout = () => {
       <Marquee />
       <Header />
       <Outlet />
+      <SubscribeNews />
       <Footer />
     </div>
   );
