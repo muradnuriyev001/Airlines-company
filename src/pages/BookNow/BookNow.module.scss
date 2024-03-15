@@ -1,3 +1,7 @@
+.content {
+  display: flex !important;
+  background: red;
+}
 .book {
   min-height: 400px;
   background-color: var(--blue-color2);
@@ -15,7 +19,6 @@
 .bookCards {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
   gap: 20px;
 }
@@ -26,8 +29,16 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1280px) {
   .book {
     padding: 30px 20px;
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .content {
+    display: flex !important;
+    flex-direction: column;
+  }
+}
+

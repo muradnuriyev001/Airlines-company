@@ -1,11 +1,21 @@
 .bookCard {
-  background-color: red;
+  background-color: var(--orange-color);
   width: 400px;
   height: 200px;
 }
 
-@media only screen and (max-width: 930px) {
+@media only screen and (max-width: 1120px) {
   .bookCard {
     width: 600px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .bookCard {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .bookCard {
+    width: 700px;
   }
 }
