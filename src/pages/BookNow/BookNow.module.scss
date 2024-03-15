@@ -1,0 +1,33 @@
+.book {
+  min-height: 400px;
+  background-color: var(--blue-color2);
+  padding: 30px 100px;
+  h1 {
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-family: sans-serif "Times New Roman", Times, serif;
+    font-weight: 400;
+  }
+}
+
+.bookCards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 1850px) {
+  .book {
+    padding: 30px 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .book {
+    padding: 30px 20px;
+  }
+}

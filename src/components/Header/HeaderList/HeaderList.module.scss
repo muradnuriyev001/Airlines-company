@@ -88,10 +88,17 @@
     }
   }
 }
-
+@media only screen and (min-width: 450px) {
+  .navBook {
+    display: none;
+  }
+}
 @media only screen and (max-width: 450px) {
   .book {
     display: none;
+  }
+  .navBook {  
+    display: block;
   }
 }
 
@@ -102,6 +109,6 @@
     max-height: 50px;
   }
   100% {
-    max-height: 250px;
+    max-height: 300px;
   }
 }

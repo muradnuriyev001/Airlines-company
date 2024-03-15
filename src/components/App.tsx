@@ -5,6 +5,7 @@ import Layout from "../pages/Layout/Layout";
 import About from "../pages/About/About";
 import Planes from "../pages/Planes/Planes";
 import Contact from "../pages/Contact/Contact";
+import BookNow from "../pages/BookNow/BookNow";
 import NotFound from "../pages/NotFound/NotFound";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/planes" element={<Planes />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/book-now" element={<BookNow />} />
       </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>

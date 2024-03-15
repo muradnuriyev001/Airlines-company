@@ -9,7 +9,7 @@ import { IoMenu } from "react-icons/io5";
 
 const HeaderList = () => {
   const [isActive, setIsActive] = useState(false);
-  
+
   const location = useLocation();
 
   const handleActive = () => {
@@ -46,19 +46,22 @@ const HeaderList = () => {
             <NavLink to={"/contact"}>
               <li>Contact</li>
             </NavLink>
+            <NavLink className={c.navBook} to={"/book-now"}>
+              <li>Book Now</li>
+            </NavLink>
           </ul>
         </div>
       )}
 
       <div className={c.book}>
-        <NavLink to={"/book"}>
+        <NavLink to={"/book-now"}>
           <MdOutlineAirplaneTicket />
           <li>Book Now</li>
         </NavLink>
       </div>
 
       <button onClick={handleActive} className={c.burger}>
-        <IoMenu  />
+        <IoMenu />
       </button>
     </div>
   );
