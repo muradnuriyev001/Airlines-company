@@ -1,0 +1,114 @@
+.book {
+  background-color: var(--blue-color3);
+  z-index: 100;
+  width: 1000px;
+  margin: auto;
+  min-height: 150px;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  place-items: center;
+  padding: 0px 100px;
+  position: relative;
+  margin-top: -80px;
+}
+
+.book div {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  label {
+    color: var(--orange-color);
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  input,
+  select {
+    background-color: var(--blue-color4);
+    color: var(--white-color);
+    border: none;
+    padding: 10px;
+    &:focus {
+      border: none;
+    }
+  }
+}
+
+.bookBtn {
+  button {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: var(--orange-color2);
+    border: none;
+    color: var(--blue-color2);
+    font-size: 20px;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: 0.5s all;
+    svg {
+      margin-right: 10px;
+    }
+    &:hover {
+      background-color: var(--blue-color4);
+      color: white;
+    }
+  }
+}
+
+/*Responsive*/
+
+@media only screen and (max-width: 1024px) {
+  .book {
+    width: 850px;
+  }
+  .book div {
+    margin-right: 10px;
+  }
+
+  .bookBtn {
+    button {
+      padding: 10px 20px;
+      width: 150px;
+      font-size: 17px;
+    }
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .book {
+    width: 600px;
+    min-height: 250px;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 20px;
+    place-items: initial;
+  }
+  .book div {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .book {
+    width: 400px;
+    min-height: 450px;
+    grid-template-columns: 1fr;
+    place-items: initial;
+    padding: 10px 50px;
+    margin-top: -60px;
+  }
+  .book div {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .book {
+    width: 310px;
+    justify-items: center;
+    place-items: initial;
+    padding: 15px 50px;
+  }
+}

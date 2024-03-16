@@ -1,7 +1,8 @@
 .sponsors {
-  padding: 30px 0px;
+  padding: 100px 0px;
+  padding-top: 50px;
   border: solid var(--orange-color2);
-  border-width: 5px 0px 5px 0px;
+  border-width: 0px 0px 5px 0px;
   background-color: white;
   .sponsorContainer {
     width: 200px;
@@ -19,7 +20,7 @@
   }
   .text {
     text-align: center;
-    padding-bottom: 50px;
+    padding: 50px 0px;
     h1 {
       color: var(--orange-color);
       font-family: sans-serif;
