@@ -17,6 +17,8 @@ import meal from "../../../assets/img/Home/Offer/meal.jpg";
 import transport from "../../../assets/img/Home/Offer/transport.jpg";
 import airport from "../../../assets/img/Home/Offer/airport.webp";
 
+const images = [flight1, flight2, meal, transport, airport];
+
 import HomeOfferCard from "./HomeOfferCard/HomeOfferCard";
 
 const HomeOffer: FC = () => {
@@ -26,7 +28,7 @@ const HomeOffer: FC = () => {
         <p>SERVICES</p>
         <h1>What We Offer</h1>
         <span>
-          Discover our range of services to make your journey seamless and
+          Discover our services to make your journey seamless and
           enjoyable.
         </span>
       </div>
@@ -55,21 +57,11 @@ const HomeOffer: FC = () => {
         }}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <HomeOfferCard image={flight1} heading="" text="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <HomeOfferCard image={flight2} heading="" text="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <HomeOfferCard image={meal} heading="" text="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <HomeOfferCard image={transport} heading="" text="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <HomeOfferCard image={airport} heading="" text="" />
-        </SwiperSlide>
+        {images.map((image, i) => (
+          <SwiperSlide key={i}>
+            <HomeOfferCard image={image} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

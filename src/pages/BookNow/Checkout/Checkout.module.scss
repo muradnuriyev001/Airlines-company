@@ -62,10 +62,26 @@
 @media only screen and (max-width: 800px) {
   .checkout {
     padding: 100px 100px;
+    h2 {
+      color: var(--orange-color);
+      font-size: 40px;
+      margin: 10px 0px;
+    }
+    p {
+      font-size: 20px;
+    }
+    .button {
+      margin-top: 30px;
+    }
   }
 }
 @media only screen and (max-width: 500px) {
   .checkout {
-    padding: 100px 70px;
+    padding: 100px 50px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .checkout {
+    padding: 100px 30px;
   }
 }

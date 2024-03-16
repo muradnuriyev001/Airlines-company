@@ -1,14 +1,15 @@
-import c from "./Home.module.scss"
-import HomeBanner from "./HomeBanner/HomeBanner"
-import HomeOffer from "./HomeOffer/HomeOffer"
+import HomeBanner from "./HomeBanner/HomeBanner";
+import HomeOffer from "./HomeOffer/HomeOffer";
+import HomeSponsors from "./HomeSponsors/HomeSponsors";
 
 const Home = () => {
   return (
-    <div className={c.home}>
-      <HomeBanner/>
-      <HomeOffer/>
+    <div>
+      <HomeBanner />
+      <HomeSponsors />
+      <HomeOffer />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

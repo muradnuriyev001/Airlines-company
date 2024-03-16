@@ -1,29 +1,30 @@
 .offer {
   background-color: var(--blue-color2);
   min-height: 400px;
-  padding: 50px 0px;
+  padding: 50px 10px;
 }
 
 .offer-text {
   margin-bottom: 50px;
   text-align: center;
-  font-family: sans-serif "Times New Roman", Times, serif;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 2px;
 }
 
 .offer-text p {
   color: var(--orange-color);
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
 }
 .offer-text h1 {
   color: var(--white-color);
-  font-weight: 800;
-  font-size: 40px;
+  font-weight: 600;
+  font-size: 30px;
 }
 .offer-text span {
   color: var(--white-color);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .swiper {
