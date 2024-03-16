@@ -1,0 +1,21 @@
+.card {
+  position: relative;
+}
+.logo {
+  img {
+    object-fit: fill;
+    height: 500px;
+  }
+}
+.text {
+  position: absolute;
+  top: 0;
+  h3 {
+    color: var(--orange-color);
+    font-size: 30px;
+  }
+  p {
+    color: white;
+    font-size: 12px;
+  }
+}

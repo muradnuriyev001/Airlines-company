@@ -20,6 +20,9 @@ html {
   --orange-color: #bea47b;
   --orange-color2: #dcbb87;
   --white-color: #fdfdfd;
+  --white-color2: #f5fbff;
+
+  --swiper-pagination-color: orange;
 }
 
 /* Scrollbar settings*/

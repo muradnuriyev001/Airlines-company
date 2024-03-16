@@ -4,8 +4,7 @@ import { FaCaretRight } from "react-icons/fa6";
 import { RiVisaFill } from "react-icons/ri";
 import { FaCcMastercard, FaPaypal, FaBitcoin } from "react-icons/fa6";
 import { SiQiwi } from "react-icons/si";
-import { FaChevronRight } from "react-icons/fa";
-import { FaChevronLeft } from "react-icons/fa";
+
 
 const payments = [RiVisaFill, FaCcMastercard, FaPaypal, FaBitcoin, SiQiwi];
 
