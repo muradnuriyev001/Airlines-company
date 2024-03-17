@@ -14,6 +14,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* For ios devices */
+input {
+  border-radius: 0 !important;
+}
+
 :root {
   --blue-color: #19232d;
   --blue-color2: #2c3742;
