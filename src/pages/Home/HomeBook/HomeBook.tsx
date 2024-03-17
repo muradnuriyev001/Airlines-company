@@ -1,6 +1,7 @@
 import c from "./HomeBook.module.scss";
 import { NavLink } from "react-router-dom";
 import { FaPlaneDeparture } from "react-icons/fa6";
+import HomeBookDate from "./HomeBookDate/HomeBookDate";
 
 const HomeBook = () => {
   return (
@@ -16,14 +17,9 @@ const HomeBook = () => {
         </select>
       </div>
 
-      <div className={c.arrival}>
-        <label>Arrival Date</label>
-        <input type="date" />
-      </div>
-
-      <div className={c.departure}>
-        <label>Departure Date</label>
-        <input type="date" />
+      <div className={c.date}>
+        <label>Arrival - Departure Date</label>
+        <HomeBookDate />
       </div>
       <div className={c.passangers}>
         <label>Passangers:</label>

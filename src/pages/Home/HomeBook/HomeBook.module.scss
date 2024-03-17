@@ -1,19 +1,21 @@
 .book {
   background-color: var(--blue-color3);
   z-index: 100;
-  width: 1000px;
+  width: 800px;
   margin: auto;
   min-height: 150px;
   border-radius: 25px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   place-items: center;
-  padding: 0px 100px;
+  padding: 0px 10px;
   position: relative;
   margin-top: -80px;
 }
 
-.book div {
+.book .plane,
+.passangers,
+.bookBtn {
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
@@ -28,7 +30,27 @@
     background-color: var(--blue-color4);
     color: var(--white-color);
     border: none;
+    padding: 10px 40px 10px 5px;
+    &:focus {
+      border: none;
+    }
+  }
+}
+
+.date {
+  label {
+    color: var(--orange-color);
+    font-size: 15px;
+    font-weight: 700;
+
+    font-family: sans-serif;
+  }
+  input {
+    background-color: var(--blue-color4);
+    color: var(--white-color);
+    border: none;
     padding: 10px;
+    margin-top: 10px;
     &:focus {
       border: none;
     }
@@ -44,7 +66,7 @@
     background-color: var(--orange-color2);
     border: none;
     color: var(--blue-color2);
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 25px;
     cursor: pointer;
     transition: 0.5s all;
@@ -64,7 +86,9 @@
   .book {
     width: 850px;
   }
-  .book div {
+  .book .plane,
+  .passangers,
+  .bookBtn {
     margin-right: 10px;
   }
 
@@ -85,9 +109,6 @@
     padding: 20px 20px;
     place-items: initial;
   }
-  .book div {
-    margin-right: 10px;
-  }
 }
 
 @media only screen and (max-width: 620px) {
@@ -96,11 +117,8 @@
     min-height: 450px;
     grid-template-columns: 1fr;
     place-items: initial;
-    padding: 10px 50px;
+    padding: 50px 50px;
     margin-top: -60px;
-  }
-  .book div {
-    margin-top: 10px;
   }
 }
 
@@ -109,6 +127,6 @@
     width: 310px;
     justify-items: center;
     place-items: initial;
-    padding: 15px 50px;
+    padding: 40px 50px;
   }
 }

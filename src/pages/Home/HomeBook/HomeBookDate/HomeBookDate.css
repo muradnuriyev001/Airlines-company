@@ -1,0 +1,48 @@
+/*Color for button on datepicker in homepage */
+.react-datepicker__close-icon::after {
+  background-color: var(--orange-color);
+}
+.react-datepicker__close-icon {
+  top: 10%;
+}
+
+.react-datepicker__header {
+  background-color: var(--blue-color);
+  padding: 20px 0px;
+}
+
+.react-datepicker__current-month,
+.react-datepicker__day,
+.react-datepicker__day-name {
+  color: var(--white-color);
+}
+
+.react-datepicker__day:hover {
+  background-color: var(--blue-color);
+}
+
+.react-datepicker__month,
+.react-datepicker__month-container {
+  background-color: var(--orange-color);
+}
+
+.react-datepicker__day--today {
+  background-color: var(--blue-color2);
+}
+
+/*Responsive for delete button of datepicker*/
+@media only screen and (max-width: 860px) {
+  .react-datepicker__close-icon {
+    right: 32%;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .react-datepicker__close-icon {
+    right: 36%;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .react-datepicker__close-icon {
+    right: 10%;
+  }
+}
