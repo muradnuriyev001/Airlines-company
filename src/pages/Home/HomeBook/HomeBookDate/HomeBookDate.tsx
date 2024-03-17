@@ -12,6 +12,7 @@ const HomeBookDate = () => {
   return (
     <DatePicker
       selectsRange={true}
+      minDate={new Date()}
       startDate={startDate}
       endDate={endDate}
       onChange={(update) => {

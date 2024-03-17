@@ -17,6 +17,7 @@ html {
 /* For ios devices */
 input {
   border-radius: 0 !important;
+  -webkit-appearance: none; /* Reset default Safari styles */
 }
 
 :root {

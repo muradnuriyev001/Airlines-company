@@ -30,6 +30,13 @@
   background-color: var(--blue-color2);
 }
 
+.react-datepicker__day--disabled {
+  color: gray;
+}
+.react-datepicker__day--disabled:hover {
+  background-color: transparent;
+}
+
 /*Responsive for delete button of datepicker*/
 @media only screen and (max-width: 860px) {
   .react-datepicker__close-icon {
