@@ -1,6 +1,6 @@
 .sponsors {
-  padding: 100px 0px;
-  padding-top: 50px;
+  padding: 50px 0px;
+  padding-top: 20px;
   border: solid var(--orange-color2);
   border-width: 0px 0px 5px 0px;
   background-color: white;
@@ -24,7 +24,7 @@
     h1 {
       color: var(--orange-color);
       font-family: sans-serif;
-      font-size: clamp(15px, 2vw, 24px);
+      font-size: clamp(17px, 2vw, 24px);
     }
   }
 }

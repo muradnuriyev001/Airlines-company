@@ -6,6 +6,15 @@
   top: 10%;
 }
 
+.react-datepicker__input-container input {
+  border: 1px solid var(--orange-color);
+  padding: 10px;
+}
+
+.react-datepicker__input-container input::placeholder {
+  color: var(--white-color);
+}
+
 .react-datepicker__header {
   background-color: var(--blue-color);
   padding: 20px 0px;

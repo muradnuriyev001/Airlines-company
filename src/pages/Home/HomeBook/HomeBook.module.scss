@@ -29,11 +29,17 @@
   select {
     background-color: var(--blue-color4);
     color: var(--white-color);
-    border: none;
-    padding: 10px 40px 10px 5px;
+    border: 1px solid var(--orange-color);
+    padding: 10px 40px 10px 8px;
     &:focus {
       border: none;
     }
+  }
+}
+
+.passangers {
+  select {
+    padding: 10px 80px 10px 8px;
   }
 }
 
@@ -75,6 +81,7 @@
     }
     &:hover {
       background-color: var(--blue-color4);
+      border: 1px solid var(--orange-color);
       color: white;
     }
   }

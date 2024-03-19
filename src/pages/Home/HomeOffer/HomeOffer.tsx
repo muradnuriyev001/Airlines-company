@@ -11,13 +11,15 @@ import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
 
 //Image imports
-import flight1 from "../../../assets/img/Home/Offer/flight1.png";
-import flight2 from "../../../assets/img/Home/Offer/flight2.jpg";
-import meal from "../../../assets/img/Home/Offer/meal.jpg";
-import transport from "../../../assets/img/Home/Offer/transport.jpg";
-import airport from "../../../assets/img/Home/Offer/airport.webp";
+import inside1 from "../../../assets/img/Home/Offer/inside1.webp";
+import inside2 from "../../../assets/img/Home/Offer/inside2.webp";
+import inside3 from "../../../assets/img/Home/Offer/inside3.jpg";
+import inside4 from "../../../assets/img/Home/Offer/inside4.jpg";
+import inside5 from "../../../assets/img/Home/Offer/inside5.jpg";
+import inside6 from "../../../assets/img/Home/Offer/inside6.jpg";
+import inside7 from "../../../assets/img/Home/Offer/inside7.jpg";
 
-const images = [flight1, flight2, meal, transport, airport];
+const images = [inside1, inside6, inside5, inside3, inside4, inside2, inside7];
 
 import HomeOfferCard from "./HomeOfferCard/HomeOfferCard";
 
@@ -25,12 +27,8 @@ const HomeOffer: FC = () => {
   return (
     <div className="offer">
       <div className="offer-text">
-        <p>SERVICES</p>
-        <h1>What We Offer</h1>
-        <span>
-          Discover our services to make your journey seamless and
-          enjoyable.
-        </span>
+        <p>Let's take a tour. </p>
+        <p>Step inside our world of luxury private jets.</p>
       </div>
       <Swiper
         spaceBetween={20}
@@ -48,11 +46,8 @@ const HomeOffer: FC = () => {
           1280: {
             slidesPerView: 3,
           },
-          600: {
+          800: {
             slidesPerView: 2,
-          },
-          0: {
-            slidesPerView: 1,
           },
         }}
         className="mySwiper"

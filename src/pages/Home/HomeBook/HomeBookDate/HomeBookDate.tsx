@@ -9,6 +9,11 @@ const HomeBookDate = () => {
     null,
   ]);
   const [startDate, endDate] = dateRange;
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    e.preventDefault();
+  };
+
   return (
     <DatePicker
       selectsRange={true}
@@ -21,6 +26,7 @@ const HomeBookDate = () => {
       withPortal
       isClearable={true}
       placeholderText="Select Date Range "
+      onChangeRaw={handleInputChange} //disable typing after selection date
     />
   );
 };
