@@ -1,0 +1,77 @@
+.card {
+  .memberImage {
+    img {
+      height: 400px;
+      width: 300px;
+      transition: 1s all;
+      &:hover {
+        scale: 1.03;
+      }
+    }
+  }
+  .memberInfo {
+    color: var(--blue-color2);
+    font-size: 18px;
+    text-align: center;
+    font-weight: 800;
+  }
+}
+
+/*Responsive*/
+
+@media only screen and (max-width: 1280px) {
+  .card {
+    .memberInfo {
+      margin-top: 5px;
+    }
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .card {
+    .memberImage {
+      img {
+        height: 600px;
+        width: 400px;
+      }
+    }
+    .memberInfo {
+      font-size: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .card {
+    .memberImage {
+      img {
+        height: 500px;
+        width: 350px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  .card {
+    .memberImage {
+      img {
+        height: 450px;
+        width: 300px;
+      }
+    }
+    .memberInfo {
+      font-size: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .card {
+    .memberImage {
+      img {
+        width: 280px;
+      }
+    }
+  }
+}

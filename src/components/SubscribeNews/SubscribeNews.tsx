@@ -7,8 +7,9 @@ const SubscribeNews = () => {
       <div className={c.text}>
         <h4>Subscribe To Our Newsletter</h4>
         <p>
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout.
+          By subscribing to the newsletter, users can stay informed and
+          up-to-date with the latest news, updates, and offers from your
+          organization.
         </p>
       </div>
       <div className={c.input}>

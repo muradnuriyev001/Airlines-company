@@ -1,0 +1,77 @@
+.team {
+  border: 5px solid var(--orange-color2);
+  border-width: 5px 0px 0px 0px;
+}
+
+.members {
+  min-height: 400px;
+  background-color: var(--white-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 50px 150px;
+}
+
+.text {
+  text-align: center;
+  padding-top: 50px;
+  h2 {
+    color: var(--orange-color2);
+    font-size: 30px;
+  }
+  p {
+    padding: 5px 0px;
+  }
+}
+
+/*Responsive*/
+
+@media only screen and (max-width: 1650px) {
+  .members {
+    padding: 50px 100px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .members {
+    padding: 50px 60px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .members {
+    padding: 50px 20px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .members {
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    padding: 50px 150px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .members {
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 100px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .members {
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 60px;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .members {
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 30px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .members {
+    grid-template-columns: 1fr;
+    padding: 50px 20px;
+  }
+}
