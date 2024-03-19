@@ -13,7 +13,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 //Image imports
 import inside1 from "../../../assets/img/Home/Offer/inside1.webp";
 import inside2 from "../../../assets/img/Home/Offer/inside2.webp";
-import inside3 from "../../../assets/img/Home/Offer/inside3.jpg";
+import inside3 from "../../../assets/img/Home/Offer/inside3.webp";
 import inside4 from "../../../assets/img/Home/Offer/inside4.jpg";
 import inside5 from "../../../assets/img/Home/Offer/inside5.jpg";
 import inside6 from "../../../assets/img/Home/Offer/inside6.jpg";

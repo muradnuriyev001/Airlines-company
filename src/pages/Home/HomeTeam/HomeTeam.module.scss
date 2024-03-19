@@ -8,6 +8,7 @@
   background-color: var(--white-color);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
   padding: 50px 150px;
 }
 
@@ -19,6 +20,7 @@
     font-size: 30px;
   }
   p {
+    font-size: 17px;
     padding: 5px 0px;
   }
 }
