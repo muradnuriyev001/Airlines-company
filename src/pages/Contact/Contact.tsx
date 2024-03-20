@@ -1,9 +1,15 @@
-import c from './Contact.module.scss'
+import ContactBanner from "./ContactBanner/ContactBanner";
+import ContactForm from "./ContactForm/ContactForm";
+import ContactInfo from "./ContactInfo/ContactInfo";
 
 const Contact = () => {
   return (
-    <div>Contact</div>
-  )
-}
+    <div>
+      <ContactBanner />
+      <ContactInfo />
+      <ContactForm />
+    </div>
+  );
+};
 
-export default Contact
+export default Contact;

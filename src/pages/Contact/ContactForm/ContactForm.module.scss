@@ -1,0 +1,147 @@
+.contact {
+  min-height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  padding: 50px 300px;
+  background-color: #f5f3f1;
+}
+
+.form {
+  height: 600px;
+  width: 500px;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  p:nth-child(1) {
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--orange-color2);
+  }
+  p:nth-child(2) {
+    margin: 10px 0px;
+  }
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 10px;
+    input,
+    textarea,
+    button {
+      resize: none;
+      padding: 18px;
+      border-radius: 15px;
+      border: 1px solid gray;
+    }
+    button {
+      background-color: var(--orange-color2);
+      color: white;
+      width: 200px;
+      padding: 10px;
+      font-size: 17px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      cursor: pointer;
+      transition: 0.5s all;
+      svg {
+        margin-right: 10px;
+        font-size: 25px;
+      }
+      &:hover {
+        background-color: var(--blue-color);
+      }
+    }
+  }
+}
+
+/*Responsive*/
+
+@media only screen and (max-width: 1700px) {
+  .contact {
+    padding: 50px 200px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .contact {
+    padding: 50px 150px;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .contact {
+    padding: 50px 100px;
+  }
+}
+@media only screen and (max-width: 1279px) {
+  .contact {
+    padding: 50px 60px;
+  }
+
+  .form {
+    width: 400px;
+  }
+
+  .map {
+    iframe {
+      width: 400px;
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .contact {
+    padding: 50px 0px;
+  }
+  .form {
+    width: 380px;
+  }
+
+  .map {
+    iframe {
+      width: 380px;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .contact {
+    grid-template-columns: 1fr;
+  }
+  .form {
+    width: 500px;
+  }
+
+  .map {
+    order: 2;
+    margin-top: 30px;
+    iframe {
+      width: 500px;
+    }
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .form {
+    width: 400px;
+  }
+
+  .map {
+    iframe {
+      width: 400px;
+    }
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .form {
+    width: 310px;
+  }
+
+  .map {
+    iframe {
+      width: 310px;
+    }
+  }
+}
