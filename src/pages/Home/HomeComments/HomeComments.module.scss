@@ -1,0 +1,55 @@
+.comments {
+  background-image: url(../../../assets/img/Home/Comments/comments2.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-attachment: fixed;
+  h1 {
+    color: var(--orange-color2);
+    color: white;
+    padding-bottom: 50px;
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .swiper {
+    height: 350px;
+    width: 65%;
+    .swiperSlide {
+      height: 300px;
+      border-radius: 25px;
+    }
+  }
+}
+
+/*Responsive*/
+
+@media only screen and (max-width: 1750px) {
+  .comments {
+    .swiper {
+      width: 80%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .comments {
+    .swiper {
+      width: 95%;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .comments {
+    .swiper {
+      height: 400px;
+      .swiperSlide {
+        height: 350px;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.video {
+  text-align: center;
+  padding: 50px 250px;
+  border: 5px solid var(--orange-color2);
+  border-width: 5px 0px 0px 0px;
+  p {
+    font-size: 20px;
+    padding: 10px;
+  }
+  h1 {
+    font-size: 30px;
+    padding: 5px;
+    color: var(--orange-color);
+  }
+}
+
+/*Responsive*/
+@media only screen and (max-width: 1600px) {
+  .video {
+    text-align: center;
+    padding: 50px 150px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .video {
+    text-align: center;
+    padding: 50px 100px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .video {
+    text-align: center;
+    padding: 50px 30px;
+  }
+}

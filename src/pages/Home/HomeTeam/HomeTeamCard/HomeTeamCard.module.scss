@@ -3,6 +3,7 @@
     img {
       height: 400px;
       width: 300px;
+      border-radius: 20px;
       transition: 1s all;
       &:hover {
         scale: 1.03;
@@ -33,8 +34,8 @@
   .card {
     .memberImage {
       img {
-        height: 600px;
-        width: 400px;
+        height: 500px;
+        width: 350px;
       }
     }
     .memberInfo {
@@ -47,9 +48,12 @@
   .card {
     .memberImage {
       img {
-        height: 500px;
-        width: 350px;
+        height: 400px;
+        width: 320px;
       }
+    }
+    .memberInfo {
+      font-size: 20px;
     }
   }
 }
@@ -57,12 +61,11 @@
   .card {
     .memberImage {
       img {
-        height: 450px;
         width: 300px;
       }
     }
     .memberInfo {
-      font-size: 20px;
+      font-size: 18px;
     }
   }
 }
