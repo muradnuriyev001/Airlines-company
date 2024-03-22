@@ -1,0 +1,66 @@
+.planes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  padding: 40px 150px;
+  row-gap: 40px;
+  border: 5px solid var(--orange-color);
+  border-width: 0px 0px 5px 0px;
+}
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  color: var(--orange-color);
+}
+
+/*Responsive*/
+@media only screen and (max-width: 1650px) {
+  .planes {
+    padding: 40px 100px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .planes {
+    padding: 40px 50px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .planes {
+    padding: 40px 10px;
+  }
+}
+
+@media only screen and (max-width: 1279px) {
+  .planes {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+    padding: 40px 80px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .planes {
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .planes {
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 10px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .planes {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+    padding: 40px 10px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+}
