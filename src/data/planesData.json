@@ -4,41 +4,41 @@
     "description": "Charter B1528",
     "price": "$3500",
     "seats": "4-6",
-    "image": "/src/assets/img/Plane/Models/plane-1.jpg"
+    "image": "../../src/assets/img/Plane/Models/plane-1.jpg"
   },
   {
     "name": "Business Jet Charter",
     "description": "Charter B1529",
     "price": "$5000",
     "seats": "10-14",
-    "image": "/src/assets/img/Plane/Models/plane-2.jpg"
+    "image": "../../src/assets/img/Plane/Models/plane-2.jpg"
   },
   {
     "name": "Private Helicopter",
     "description": "Charter B15231",
     "price": "$2500",
     "seats": "4-6",
-    "image": "/src/assets/img/Plane/Models/plane-3.jpg"
+    "image": "../../src/assets/img/Plane/Models/plane-3.jpg"
   },
   {
     "name": "Private Helicopter",
     "description": "Charter B1528",
     "price": "$3000",
     "seats": "8-10",
-    "image": "/src/assets/img/Plane/Models/plane-4.jpg"
+    "image": "../../src/assets/img/Plane/Models/plane-4.jpg"
   },
   {
     "name": "Private Medium Jet",
     "description": "Charter B1528",
     "price": "$2000",
     "seats": "4-6",
-    "image": "/src/assets/img/Plane/Models/plane-5.jpg"
+    "image": "../../src/assets/img/Plane/Models/plane-5.jpg"
   },
   {
     "name": "Private Luxury Plane",
     "description": "Boeing 747",
     "price": "$15000",
     "seats": "30-40",
-    "image": "/src/assets/img/Plane/Models/plane-6.jpg"
+    "image": "../../src/assets/img/Plane/Models/plane-6.jpg"
   }
 ]

@@ -5,7 +5,6 @@ import PlaneCard from "./PlaneCard/PlaneCard";
 import PlanesBanner from "./PlanesBanner/PlanesBanner";
 import HomeComments from "../Home/HomeComments/HomeComments";
 import HomeOffer from "../Home/HomeOffer/HomeOffer";
-import HomeSponsors from "../Home/HomeSponsors/HomeSponsors";
 
 const Planes = () => {
   return (
