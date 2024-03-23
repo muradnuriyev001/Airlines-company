@@ -13,13 +13,12 @@ import { Autoplay } from "swiper/modules";
 import logo1 from "../../../assets/img/Home/Sponsors/hilton.jpg";
 import logo2 from "../../../assets/img/Home/Sponsors/americanexpress.png";
 import logo3 from "../../../assets/img/Home/Sponsors/apple.jpg";
-import logo4 from "../../../assets/img/Home/Sponsors/mastercard.png";
+import logo4 from "../../../assets/img/Home/Sponsors/uber.jpg";
 import logo5 from "../../../assets/img/Home/Sponsors/shell.png";
 import logo6 from "../../../assets/img/Home/Sponsors/amazon.jpg";
 import logo7 from "../../../assets/img/Home/Sponsors/liverpool.png";
-import logo8 from "../../../assets/img/Home/Sponsors/uber.jpg";
 
-const sponsors = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8];
+const sponsors = [logo1, logo2, logo3, logo4, logo5, logo6, logo7];
 
 const HomeSponsors = () => {
   return (

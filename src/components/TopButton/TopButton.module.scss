@@ -13,6 +13,7 @@
   bottom: 20px;
   right: 20px;
   transition: 0.4s all;
+  mix-blend-mode: difference;
   &:hover {
     background-color: var(--orange-color);
     .topIcon {
@@ -22,6 +23,6 @@
   .topIcon {
     width: 32px;
     height: 32px;
-    color: rgb(207, 151, 46);
+    color: var(--orange-color2);
   }
 }

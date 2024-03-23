@@ -52,6 +52,8 @@
 
   .button {
     margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
     button {
       background-color: var(--orange-color2);
       border-radius: 25px;
@@ -119,6 +121,18 @@
     height: 450px;
     img {
       width: 310px;
+    }
+  }
+
+  .info {
+    .button {
+      button {
+        font-size: 16px;
+        padding: 8px 10px;
+      }
+      svg {
+        font-size: 20px;
+      }
     }
   }
 }

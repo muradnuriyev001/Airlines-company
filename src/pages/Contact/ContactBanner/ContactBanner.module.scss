@@ -1,6 +1,6 @@
 .banner {
   background-image: url("../../../assets/img/Contact/Banner/banner.jpg");
-  height: 500px;
+  height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -9,4 +9,6 @@
   justify-content: center;
   color: var(--white-color);
   font-size: 40px;
+  border: 5px solid var(--orange-color);
+  border-width: 0px 0px 5px 0px;
 }

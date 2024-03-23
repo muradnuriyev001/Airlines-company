@@ -5,7 +5,7 @@ import { Booking } from "../../../types/types";
 import { useDispatch } from "react-redux";
 import { deleteBooking } from "../../../redux/slices/booking.slice";
 
-import { AiOutlineDelete } from "react-icons/ai";
+import { FaDeleteLeft } from "react-icons/fa6";
 
 const BookCard: FC<Booking> = ({ name, price, seats, id }) => {
   const dispatch = useDispatch();
@@ -23,7 +23,7 @@ const BookCard: FC<Booking> = ({ name, price, seats, id }) => {
     <div className={c.bookCard}>
       <div className={c.name}>
         <h2>{name}</h2>
-        <AiOutlineDelete onClick={() => handleDeleteBooking(id)} />
+        <FaDeleteLeft onClick={() => handleDeleteBooking(id)} />
       </div>
 
       <div className={c.info}>

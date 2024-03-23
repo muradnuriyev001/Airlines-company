@@ -20,8 +20,12 @@
     justify-content: space-between;
     svg {
       font-size: 30px;
-      color: red;
+      color: var(--blue-color);
       cursor: pointer;
+      transition: 0.5s all;
+      &:hover {
+        color: red;
+      }
     }
   }
   .info {
