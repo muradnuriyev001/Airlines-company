@@ -1,6 +1,11 @@
 import c from "./PlaneCard.module.scss";
 import { FC } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
+
+//Redux
+
+import { useDispatch, useSelector } from "react-redux";
+import { addBooking, selectBooking } from "../../../redux/slices/booking.slice";
 
 import { MdOutlineAirlineSeatReclineExtra } from "react-icons/md";
 import { FaPlaneDeparture } from "react-icons/fa";
@@ -13,9 +18,13 @@ interface Plane {
   seats: string;
 }
 const PlaneCard: FC<Plane> = ({ image, name, description, price, seats }) => {
-  //Navigate to Book-Now Page
-  const navigate = useNavigate();
-  const goHome = () => navigate("/book-now", { replace: true });
+  //Redux
+  const dispatch = useDispatch();
+
+  const handleAddBooking = () => {
+    const bookingData = { name, price, seats };
+    dispatch(addBooking(bookingData));
+  };
 
   return (
     <div className={c.card}>
@@ -29,14 +38,14 @@ const PlaneCard: FC<Plane> = ({ image, name, description, price, seats }) => {
           <p>{description}</p>
         </div>
         <div className={c.ps}>
-          <p>{price}</p>
+          <p>{price}$</p>
           <p>
             <MdOutlineAirlineSeatReclineExtra />
             {seats} Seats
           </p>
         </div>
         <div className={c.button}>
-          <button onClick={goHome}>
+          <button onClick={handleAddBooking}>
             <FaPlaneDeparture />
             Book Now
           </button>

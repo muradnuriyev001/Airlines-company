@@ -1,24 +1,27 @@
-import BookCard from "./BookCard/BookCard";
 import c from "./BookNow.module.scss";
+import { useSelector } from "react-redux";
+import { selectBooking } from "../../redux/slices/booking.slice";
+
+import BookCard from "./BookCard/BookCard";
 import Checkout from "./Checkout/Checkout";
 
 const BookNow = () => {
+  const bookingSelector = useSelector(selectBooking);
+  const bookingArray = Array.isArray(bookingSelector) ? bookingSelector : [];
+
   return (
     <div className={c.content}>
       <div className={c.book}>
         <h1>Book now your flight</h1>
         <div className={c.bookCards}>
-          <BookCard />
-          <BookCard />
-          <BookCard />
-          <BookCard />
-          <BookCard />
-          <BookCard />
-          <BookCard />
-          <BookCard />
-          <BookCard />
+          {!bookingArray.length ? (
+            <h3>There is no booking..</h3>
+          ) : (
+            bookingArray.map((book, i) => <BookCard key={i} {...book} />)
+          )}
         </div>
       </div>
+
       <Checkout />
     </div>
   );

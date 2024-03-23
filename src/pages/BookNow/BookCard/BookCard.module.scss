@@ -1,7 +1,23 @@
 .bookCard {
   background-color: var(--orange-color);
+  background-image: url(../../../assets/img/BookNow/card.webp);
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat;
   width: 400px;
   height: 200px;
+  padding: 10px;
+  h2 {
+    color: var(--orange-color2);
+  }
+  p {
+    font-size: 20px;
+    padding: 2px 0px;
+  }
+
+  .info {
+    margin-top: 90px;
+  }
 }
 
 @media only screen and (max-width: 1120px) {

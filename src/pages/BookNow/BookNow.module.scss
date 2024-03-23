@@ -1,18 +1,23 @@
 .content {
   display: flex !important;
-  background: red;
 }
 .book {
   min-height: 400px;
   background-color: var(--blue-color2);
   padding: 30px 100px;
+  width: 100%;
   h1 {
-    color: white;
+    color: var(--orange-color);
     text-align: center;
     padding-bottom: 20px;
     font-size: 30px;
     font-family: sans-serif "Times New Roman", Times, serif;
     font-weight: 400;
+  }
+  h3 {
+    color: white;
+    padding-top: 100px;
+    font-size: 25px;
   }
 }
 
@@ -41,4 +46,3 @@
     flex-direction: column;
   }
 }
-
