@@ -1,5 +1,14 @@
-export default interface Booking {
+export interface Booking {
   name: string;
-  price: string;
+  price: number;
+  seats: string;
+  id: string;
+}
+
+export interface Plane {
+  image: string;
+  name: string;
+  description: string;
+  price: number;
   seats: string;
 }

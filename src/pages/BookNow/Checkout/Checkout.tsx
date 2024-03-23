@@ -15,7 +15,8 @@ const Checkout = () => {
   const bookingArray = Array.isArray(bookingSelector) ? bookingSelector : [];
 
   let initialPrice = 0;
-  const totalPrice = bookingArray.map((price) => (initialPrice += price.price));
+  
+  bookingArray.map((price) => (initialPrice += price.price));
 
   return (
     <div className={c.checkout}>

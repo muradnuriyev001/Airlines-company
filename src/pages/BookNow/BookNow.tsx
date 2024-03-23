@@ -8,6 +8,7 @@ import Checkout from "./Checkout/Checkout";
 const BookNow = () => {
   const bookingSelector = useSelector(selectBooking);
   const bookingArray = Array.isArray(bookingSelector) ? bookingSelector : [];
+  // console.log(bookingArray);
 
   return (
     <div className={c.content}>

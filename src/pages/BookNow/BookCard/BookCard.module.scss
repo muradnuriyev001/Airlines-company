@@ -14,7 +14,16 @@
     font-size: 20px;
     padding: 2px 0px;
   }
-
+  .name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    svg {
+      font-size: 30px;
+      color: red;
+      cursor: pointer;
+    }
+  }
   .info {
     margin-top: 90px;
   }

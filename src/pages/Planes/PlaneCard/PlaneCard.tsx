@@ -1,28 +1,22 @@
 import c from "./PlaneCard.module.scss";
 import { FC } from "react";
-// import { useNavigate } from "react-router-dom";
-
+import { Plane } from "../../../types/types";
+import { v4 as uuidv4 } from "uuid";
 //Redux
+import { useDispatch } from "react-redux";
+import { addBooking } from "../../../redux/slices/booking.slice";
 
-import { useDispatch, useSelector } from "react-redux";
-import { addBooking, selectBooking } from "../../../redux/slices/booking.slice";
-
+//Icons
 import { MdOutlineAirlineSeatReclineExtra } from "react-icons/md";
 import { FaPlaneDeparture } from "react-icons/fa";
 
-interface Plane {
-  image: string;
-  name: string;
-  description: string;
-  price: string;
-  seats: string;
-}
 const PlaneCard: FC<Plane> = ({ image, name, description, price, seats }) => {
   //Redux
   const dispatch = useDispatch();
 
   const handleAddBooking = () => {
-    const bookingData = { name, price, seats };
+    const bookingData = { name, price, seats, id: uuidv4() };
+    
     dispatch(addBooking(bookingData));
   };
 

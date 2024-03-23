@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import Booking from "../../types/types";
+import { Booking } from "../../types/types";
 
 interface BookingState {
   booking: Booking[];
@@ -16,10 +16,15 @@ const bookingSlice = createSlice({
     addBooking: (state, action: PayloadAction<Booking>) => {
       state.booking.push(action.payload);
     },
+    deleteBooking: (state, action: PayloadAction<Booking>) => {
+      state.booking = state.booking.filter(
+        (book) => book.id !== action.payload.id
+      );
+    },
   },
 });
 
-export const { addBooking } = bookingSlice.actions;
+export const { addBooking, deleteBooking } = bookingSlice.actions;
 export const selectBooking = (state: { booking: BookingState }) =>
   state.booking;
 export default bookingSlice.reducer;
