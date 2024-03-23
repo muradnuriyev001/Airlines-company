@@ -32,7 +32,7 @@ const HomeBook = () => {
         </select>
       </div>
       <div className={c.bookBtn}>
-        <NavLink to={"/book-now"}>
+        <NavLink to={"/planes"}>
           <button>
             <FaPlaneDeparture />
             Book Now

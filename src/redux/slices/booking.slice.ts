@@ -2,6 +2,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { Booking } from "../../types/types";
 
 interface BookingState {
+  [x: string]: any; //For HeaderList.tsx, length error in const bookNowLength = bookNow.length;
   booking: Booking[];
 }
 

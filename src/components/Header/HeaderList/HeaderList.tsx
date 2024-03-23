@@ -6,11 +6,16 @@ import c from "./HeaderList.module.scss";
 
 import { MdOutlineAirplaneTicket } from "react-icons/md";
 import { IoMenu } from "react-icons/io5";
+import { useSelector } from "react-redux";
+import { selectBooking } from "../../../redux/slices/booking.slice";
 
 const HeaderList = () => {
   const [isActive, setIsActive] = useState(false);
 
   const location = useLocation();
+
+  const bookNow = useSelector(selectBooking);
+  const bookNowLength = bookNow.length;
 
   const handleActive = () => {
     setIsActive(!isActive);
@@ -54,7 +59,7 @@ const HeaderList = () => {
       )}
 
       <div className={c.book}>
-        <NavLink to={"/book-now"}>
+        <NavLink data-count={bookNowLength} to={"/book-now"}>
           <MdOutlineAirplaneTicket />
           <li>Book Now</li>
         </NavLink>
