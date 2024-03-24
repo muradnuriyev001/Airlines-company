@@ -18,7 +18,7 @@ const HomeBook = () => {
       </div>
 
       <div className={c.date}>
-        <label>Arrival - Departure Date</label>
+        <label>Select Travel Date</label>
         <HomeBookDate />
       </div>
       <div className={c.passangers}>

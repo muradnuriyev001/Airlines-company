@@ -25,7 +25,7 @@ const HomeBookDate = () => {
       }}
       withPortal
       isClearable={true}
-      placeholderText="Select Date Range "
+      placeholderText="Select Range "
       onChangeRaw={handleInputChange} //disable typing after selection date
     />
   );

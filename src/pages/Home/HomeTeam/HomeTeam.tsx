@@ -2,9 +2,9 @@ import c from "./HomeTeam.module.scss";
 
 //image imports
 import member1 from "../../../assets/img/Home/Team/member1.png";
-import member2 from "../../../assets/img/Home/Team/member2.png";
+import member2 from "../../../assets/img/Home/Team/member2.jpg";
 import member3 from "../../../assets/img/Home/Team/member3.png";
-import member4 from "../../../assets/img/Home/Team/member4.png";
+import member4 from "../../../assets/img/Home/Team/member4.jpg";
 import HomeTeamCard from "./HomeTeamCard/HomeTeamCard";
 
 const membersImages = [member1, member2, member3, member4];
