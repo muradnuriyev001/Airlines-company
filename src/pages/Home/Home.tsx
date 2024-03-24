@@ -1,3 +1,4 @@
+import usePageTitle from "../../hooks/usePageTitle";
 import HomeBanner from "./HomeBanner/HomeBanner";
 import HomeBook from "./HomeBook/HomeBook";
 import HomeComments from "./HomeComments/HomeComments";
@@ -7,6 +8,7 @@ import HomeTeam from "./HomeTeam/HomeTeam";
 import HomeVideo from "./HomeVideo/HomeVideo";
 
 const Home = () => {
+  usePageTitle("AirLine Jet | Home")
   return (
     <div>
       <HomeBanner />

@@ -1,11 +1,14 @@
 import c from "./BookNow.module.scss";
 import { useSelector } from "react-redux";
 import { selectBooking } from "../../redux/slices/booking.slice";
+import usePageTitle from "../../hooks/usePageTitle";
 
 import BookCard from "./BookCard/BookCard";
 import Checkout from "./Checkout/Checkout";
 
 const BookNow = () => {
+  usePageTitle("AirLine Jet | Book Now");
+
   const bookingSelector = useSelector(selectBooking);
   const bookingArray = Array.isArray(bookingSelector) ? bookingSelector : [];
   // console.log(bookingArray);

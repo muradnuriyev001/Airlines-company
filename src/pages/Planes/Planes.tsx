@@ -5,8 +5,10 @@ import PlaneCard from "./PlaneCard/PlaneCard";
 import PlanesBanner from "./PlanesBanner/PlanesBanner";
 import HomeComments from "../Home/HomeComments/HomeComments";
 import HomeOffer from "../Home/HomeOffer/HomeOffer";
+import usePageTitle from "../../hooks/usePageTitle";
 
 const Planes = () => {
+  usePageTitle("AirLine Jet | Planes");
   return (
     <>
       <PlanesBanner />
