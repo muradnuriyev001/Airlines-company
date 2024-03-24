@@ -1,6 +1,5 @@
-import "./HomeOffer.css";
 import { FC } from "react";
-
+import c from "./HomeOffer.module.scss";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -25,8 +24,8 @@ import HomeOfferCard from "./HomeOfferCard/HomeOfferCard";
 
 const HomeOffer: FC = () => {
   return (
-    <div className="offer">
-      <div className="offer-text">
+    <div className={c.offer}>
+      <div className={c.offerText}>
         <p>Let's take a tour. </p>
         <p>Step inside our world of luxury private jets.</p>
       </div>
@@ -37,7 +36,7 @@ const HomeOffer: FC = () => {
           clickable: true,
         }}
         autoplay={{
-          delay: 2500,
+          delay: 2000,
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Pagination]}
@@ -50,10 +49,10 @@ const HomeOffer: FC = () => {
             slidesPerView: 2,
           },
         }}
-        className="mySwiper"
+        className={c.swiper}
       >
         {images.map((image, i) => (
-          <SwiperSlide key={i}>
+          <SwiperSlide className={c.swiperSlide} key={i}>
             <HomeOfferCard image={image} />
           </SwiperSlide>
         ))}
