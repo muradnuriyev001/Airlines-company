@@ -1,6 +1,6 @@
 # React + TypeScript + Vite
 
-Web Version : https://airlines2024.netlify.app
+Web Version : https://airlines2024.netlify.app or https://airlines-company.vercel.app
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
