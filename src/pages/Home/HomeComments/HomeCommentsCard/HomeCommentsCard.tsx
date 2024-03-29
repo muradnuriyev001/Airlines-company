@@ -1,6 +1,7 @@
 import { FC } from "react";
 import c from "./HomeCommentsCard.module.scss";
 import { RiStarSFill } from "react-icons/ri";
+import { PiChatCircleText } from "react-icons/pi";
 
 interface User {
   userImage: string;
@@ -15,6 +16,9 @@ const HomeCommentsCard: FC<User> = ({ userImage, userInfo }) => {
         <RiStarSFill />
         <RiStarSFill />
         <RiStarSFill />
+      </div>
+      <div className={c.commentIcon}>
+        <PiChatCircleText />
       </div>
       <div className={c.userMessage}>
         <span>

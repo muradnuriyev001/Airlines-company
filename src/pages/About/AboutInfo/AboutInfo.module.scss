@@ -9,6 +9,9 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
   place-items: center;
+  padding: 0px 100px;
+  border: 5px solid var(--orange-color);
+  border-width: 5px 0px 5px 0px;
 }
 
 .crew {
@@ -28,11 +31,10 @@
 /*Responsive*/
 @media only screen and (max-width: 1024px) {
   .info {
-    min-height: 500px;
-    display: grid;
+    min-height: 300px;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
     place-items: center;
+    padding: 0px 20px;
   }
   .crew {
     text-align: center;
