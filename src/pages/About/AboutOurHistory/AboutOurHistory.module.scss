@@ -1,0 +1,141 @@
+.history {
+  background-color: #f5f3f1;
+  padding: 20px 300px;
+}
+
+.header {
+  padding: 20px 0px;
+  text-align: center;
+  h3 {
+    color: var(--orange-color2);
+    font-size: 30px;
+  }
+  p {
+    color: var(--blue-color);
+    font-size: 25px;
+    font-weight: 900;
+    padding: 10px 0px;
+  }
+}
+
+.item {
+  padding: 50px 0px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  &:nth-child(3) {
+    .image {
+      order: 2;
+    }
+  }
+  &:nth-child(5) {
+    .image {
+      order: 2;
+    }
+  }
+}
+
+.itemText {
+  p {
+    padding: 10px 0px;
+  }
+  p:nth-child(1) {
+    color: var(--orange-color2);
+    font-size: 45px;
+    font-weight: 800;
+  }
+  p:nth-child(2) {
+    font-size: 25px;
+    font-weight: 800;
+  }
+  p:nth-child(3) {
+    font-size: 17px;
+    width: 75%;
+    color: rgb(70, 70, 70);
+  }
+}
+
+.image {
+  img {
+    border: 25px;
+  }
+}
+
+/*Responsive*/
+@media only screen and (max-width: 1800px) {
+  .history {
+    padding: 20px 200px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .history {
+    padding: 20px 150px;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .history {
+    padding: 20px 50px;
+  }
+}
+
+@media only screen and (max-width: 1279px) {
+  .history {
+    padding: 20px 40px;
+  }
+  .image {
+    img {
+      width: 80%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .history {
+    padding: 20px 80px;
+  }
+  .image {
+    img {
+      width: 100%;
+    }
+  }
+  .itemText {
+    padding: 10px 0px;
+    p:nth-child(3) {
+      width: 100%;
+    }
+  }
+  .item {
+    grid-template-columns: 1fr;
+    place-content: center;
+    &:nth-child(3) {
+      .image {
+        order: inherit;
+      }
+    }
+    &:nth-child(5) {
+      .image {
+        order: inherit;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .history {
+    padding: 20px 20px;
+  }
+  .itemText {
+    padding: 10px 0px;
+    p:nth-child(1) {
+      font-size: 30px;
+    }
+    p:nth-child(2) {
+      font-size: 25px;
+    }
+    p:nth-child(3) {
+      font-size: 17px;
+    }
+  }
+}

@@ -24,6 +24,11 @@ a {
   color: inherit;
 }
 
+::selection {
+  color: var(--orange-color);
+  background-color: var(--blue-color2);
+}
+
 :root {
   --blue-color: #19232d;
   --blue-color2: #2c3742;
