@@ -12,6 +12,8 @@ import { MdOutlineAirlineSeatReclineExtra } from "react-icons/md";
 import { FaPlaneDeparture } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 
+import { getImageURL } from "../../../utils/getImageURL";
+
 const PlaneCard: FC<Plane> = ({ image, name, description, price, seats }) => {
   //Navigate
   const navigate = useNavigate();
@@ -29,7 +31,7 @@ const PlaneCard: FC<Plane> = ({ image, name, description, price, seats }) => {
   return (
     <div className={c.card}>
       <div className={c.image}>
-        <img src={image} alt="" />
+        <img src={getImageURL(image)} alt="Plane Image" />
       </div>
 
       <div className={c.info}>

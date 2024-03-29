@@ -1,13 +1,12 @@
 import c from "./Planes.module.scss";
 import { useEffect, useState } from "react";
-import planesData from '../../data/planesData copy.json'
+import planesData from "../../data/planesData copy.json";
 
 import PlaneCard from "./PlaneCard/PlaneCard";
 import PlanesBanner from "./PlanesBanner/PlanesBanner";
 import HomeComments from "../Home/HomeComments/HomeComments";
 import HomeOffer from "../Home/HomeOffer/HomeOffer";
 import usePageTitle from "../../hooks/usePageTitle";
-
 
 // import planesData from "../../data/planesData.json";
 
@@ -42,23 +41,13 @@ import usePageTitle from "../../hooks/usePageTitle";
 
 const Planes = () => {
   usePageTitle("AirLine Jet | Planes");
-
-  const [images, setImages] = useState<string[]>([]);
-
-  useEffect(() => {
-    // Extracting image URLs from planesData
-    const imageUrls = planesData.map(plane => plane.image);
-    // Setting image URLs to state
-    setImages(imageUrls);
-  }, []);
-
   return (
     <>
       <PlanesBanner />
       <h1>Explore our planes</h1>
       <div className={c.planes}>
         {planesData.map((plane, i) => (
-          <PlaneCard key={i} {...plane}  image={images[i]}/>
+          <PlaneCard key={i} {...plane} />
         ))}
       </div>
       <HomeOffer />
