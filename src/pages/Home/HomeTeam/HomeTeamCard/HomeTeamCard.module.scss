@@ -12,9 +12,11 @@
   }
   .memberInfo {
     color: rgb(80, 80, 80);
-    font-size: 18px;
+    color: var(--orange-color2);
+    font-size: 17px;
     text-align: center;
-    font-weight: 700;
+    font-family: sans-serif;
+    font-weight: 600;
     margin-top: 10px;
   }
 }
