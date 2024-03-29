@@ -1,0 +1,46 @@
+.info {
+  background-image: url(../../../assets/img/About/Info/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  place-items: center;
+}
+
+.crew {
+  text-align: center;
+  p:nth-child(1) {
+    color: var(--orange-color);
+    font-size: 50px;
+    font-weight: 800;
+  }
+  p:nth-child(2) {
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 800;
+  }
+}
+
+/*Responsive*/
+@media only screen and (max-width: 1024px) {
+  .info {
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    place-items: center;
+  }
+  .crew {
+    text-align: center;
+    p:nth-child(1) {
+      font-size: 40px;
+    }
+    p:nth-child(2) {
+      font-size: 20px;
+    }
+  }
+}

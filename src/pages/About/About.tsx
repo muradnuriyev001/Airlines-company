@@ -5,13 +5,15 @@ import AboutBanner from "./AboutBanner/AboutBanner";
 
 import usePageTitle from "../../hooks/usePageTitle";
 import AboutOurHistory from "./AboutOurHistory/AboutOurHistory";
+import AboutInfo from "./AboutInfo/AboutInfo";
 
 const About = () => {
   usePageTitle("AirLine Jet | About");
   return (
     <div>
       <AboutBanner />
-      <AboutOurHistory/>
+      <AboutOurHistory />
+      <AboutInfo />
       <HomeTeam />
       <HomeComments />
       <HomeSponsors />
