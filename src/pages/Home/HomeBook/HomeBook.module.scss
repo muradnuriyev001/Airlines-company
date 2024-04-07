@@ -31,6 +31,9 @@
     color: var(--white-color);
     border: 1px solid var(--orange-color);
     padding: 10px 40px 10px 8px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     &:focus {
       border: none;
     }
