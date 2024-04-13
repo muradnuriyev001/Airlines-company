@@ -1,4 +1,17 @@
 import c from "./AboutOurHistory.module.scss";
+import { motion } from "framer-motion";
+
+const Animation = {
+  hidden: {
+    y: 100,
+    opacity: 0,
+  },
+  visible: (custom: number) => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * 1 },
+  }),
+};
 import image1 from "../../../assets/img/About/Planes/history-1.png";
 import image2 from "../../../assets/img/About/Planes/history-2.png";
 import image3 from "../../../assets/img/About/Planes/history-3.png";
@@ -35,26 +48,46 @@ const images = [image1, image2, image3, image4];
 
 const AboutOurHistory = () => {
   return (
-    <div className={c.history}>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.2, once: true }}
+      className={c.history}
+    >
       <div className={c.header}>
-        <h3>Our History</h3>
-        <p>What Make Us Special</p>
+        <motion.h3 variants={Animation} custom={0.4}>
+          Our History
+        </motion.h3>
+        <motion.p variants={Animation} custom={0.5}>
+          What Make Us Special
+        </motion.p>
       </div>
       {historyInfo.map((history, i) => (
-        <div key={i} className={c.item}>
+        <motion.div
+          variants={Animation}
+          custom={i + 1}
+          key={i}
+          className={c.item}
+        >
           <div className={c.image}>
             <img src={images[i]} alt="" draggable="false" />
           </div>
           <div className={c.itemText}>
-            <p>{history.year}</p>
-            <p>{history.name}</p>
-            <p>{history.description}</p>
+            <motion.p variants={Animation} custom={i + 1.1}>
+              {history.year}
+            </motion.p>
+            <motion.p variants={Animation} custom={i + 1.2}>
+              {history.name}
+            </motion.p>
+            <motion.p variants={Animation} custom={i + 1.3}>
+              {history.description}
+            </motion.p>
           </div>
-        </div>
+        </motion.div>
       ))}
 
       <div></div>
-    </div>
+    </motion.div>
   );
 };
 

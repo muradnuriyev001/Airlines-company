@@ -1,5 +1,18 @@
 import c from "./HomeTeam.module.scss";
 
+import { motion } from "framer-motion";
+
+const Animation = {
+  hidden: {
+    y: 100,
+    opacity: 0,
+  },
+  visible: (custom: number) => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * 1 },
+  }),
+};
 //image imports
 import member1 from "../../../assets/img/Home/Team/member1.jpg";
 import member2 from "../../../assets/img/Home/Team/member3.png";
@@ -20,15 +33,22 @@ const membersInfo = [
 
 const HomeTeam = () => {
   return (
-    <div className={c.team}>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.2, once: true }}
+      className={c.team}
+    >
       <div className={c.text}>
-        <h2>Meet Our Team</h2>
-        <p>
+        <motion.h2 variants={Animation} custom={0.4}>
+          Meet Our Team
+        </motion.h2>
+        <motion.p variants={Animation} custom={0.5}>
           Meet our exceptional flight team, a blend of skill, experience, and
           passion for aviation.
-        </p>
+        </motion.p>
       </div>
-      <div className={c.members}>
+      <motion.div variants={Animation} custom={0.8} className={c.members}>
         {membersInfo.map((member, i) => (
           <HomeTeamCard
             key={i}
@@ -36,8 +56,8 @@ const HomeTeam = () => {
             memberInfo={`${member.name} - ${member.role}`}
           />
         ))}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

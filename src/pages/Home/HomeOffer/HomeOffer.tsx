@@ -9,6 +9,19 @@ import "swiper/css/pagination";
 
 import { Autoplay, Pagination } from "swiper/modules";
 
+import { motion } from "framer-motion";
+
+const Animation = {
+  hidden: {
+    y: 100,
+    opacity: 0,
+  },
+  visible: (custom: number) => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * 1 },
+  }),
+};
 //Image imports
 import inside1 from "../../../assets/img/Home/Offer/inside1.webp";
 import inside2 from "../../../assets/img/Home/Offer/inside2.webp";
@@ -24,40 +37,51 @@ import HomeOfferCard from "./HomeOfferCard/HomeOfferCard";
 
 const HomeOffer: FC = () => {
   return (
-    <div className={c.offer}>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.2, once: true }}
+      className={c.offer}
+    >
       <div className={c.offerText}>
-        <p>Let's take a tour. </p>
-        <p>Step inside our world of luxury private jets.</p>
+        <motion.p variants={Animation} custom={0.4}>
+          Let's take a tour.{" "}
+        </motion.p>
+        <motion.p variants={Animation} custom={0.5}>
+          Step inside our world of luxury private jets.
+        </motion.p>
       </div>
-      <Swiper
-        spaceBetween={20}
-        loop={true}
-        pagination={{
-          clickable: true,
-        }}
-        autoplay={{
-          delay: 2000,
-          disableOnInteraction: false,
-        }}
-        modules={[Autoplay, Pagination]}
-        breakpoints={{
-          //Responsive of slidesPerView
-          1280: {
-            slidesPerView: 3,
-          },
-          800: {
-            slidesPerView: 2,
-          },
-        }}
-        className={c.swiper}
-      >
-        {images.map((image, i) => (
-          <SwiperSlide className={c.swiperSlide} key={i}>
-            <HomeOfferCard image={image} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
+      <motion.div variants={Animation} custom={0.8}>
+        <Swiper
+          spaceBetween={20}
+          loop={true}
+          pagination={{
+            clickable: true,
+          }}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay, Pagination]}
+          breakpoints={{
+            //Responsive of slidesPerView
+            1280: {
+              slidesPerView: 3,
+            },
+            800: {
+              slidesPerView: 2,
+            },
+          }}
+          className={c.swiper}
+        >
+          {images.map((image, i) => (
+            <SwiperSlide className={c.swiperSlide} key={i}>
+              <HomeOfferCard image={image} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </motion.div>
+    </motion.div>
   );
 };
 
