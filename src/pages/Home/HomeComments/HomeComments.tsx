@@ -12,10 +12,10 @@ import "swiper/css/navigation";
 //User Infos
 
 const userInfo = {
-  user1: "Alexander Hughes",
-  user2: "Benjamin Patel",
-  user3: "Sophia Chen",
-  user4: "Olivia Thompson",
+  user1: "Laman Suleymanova",
+  user2: "Togrul Mirsalayev",
+  user3: "Sevda Karimova",
+  user4: "Zarina Abbaszade",
 };
 
 //Image imports

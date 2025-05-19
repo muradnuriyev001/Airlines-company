@@ -30,9 +30,9 @@ const links = [
 // ];
 
 const contactsText = [
-  "15/B Road, New York, USA",
-  "+2 123 4566 789",
-  "info@example.com",
+  "25 Azadliq Avenue, Baku, Azerbaijan",
+  "+994 50 000 00 00",
+  "info@azerline.com",
   "Sun - Fri (10AM - 08PM)",
 ];
 
@@ -55,7 +55,7 @@ const Footer = () => {
             <NavLink to={"/"}>
               <GiAirplaneDeparture />
               <p>
-                AIR
+                AZER
                 <span>LINE</span>
               </p>
             </NavLink>
@@ -113,7 +113,7 @@ const Footer = () => {
       </div>
 
       <div className={c.line}>
-        <p>© Copyright 2024 MN All Rights Reserved.</p>
+        <p>© Copyright 2024 - All Rights Reserved.</p>
       </div>
     </div>
   );

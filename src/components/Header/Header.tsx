@@ -11,7 +11,7 @@ const Header = () => {
         <NavLink to={"/"}>
           <GiAirplaneDeparture />
           <p>
-            AIR
+            AZER
             <span>LINE</span>
           </p>
         </NavLink>

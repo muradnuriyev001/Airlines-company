@@ -23,7 +23,7 @@ const HomeCommentsCard: FC<User> = ({ userImage, userInfo }) => {
       <div className={c.userMessage}>
         <span>
           Indulgent luxury, impeccable service. From lavish cabins to attentive
-          staff, every detail with AirLine epitomizes excellence. Flying with
+          staff, every detail with Azerline epitomizes excellence. Flying with
           them isn't just a trip; it's an unparalleled journey of comfort and
           opulence above the clouds.
         </span>

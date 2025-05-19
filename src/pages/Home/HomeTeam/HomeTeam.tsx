@@ -25,10 +25,10 @@ const membersImages = [member1, member3, member2, member4];
 //MembersInfo
 
 const membersInfo = [
-  { name: "Adam Smith", role: "Pilot" },
-  { name: "Jasmin White", role: "Pilot" },
-  { name: "Emily Brown", role: "Crew" },
-  { name: "Sophia Martinez", role: "Crew" },
+  { name: "Elchin Rahimov", role: "Pilot" },
+  { name: "Aysel Mammadova", role: "Pilot" },
+  { name: "Nigar Aliyeva", role: "Crew" },
+  { name: "Gunel Hasanli", role: "Crew" },
 ];
 
 const HomeTeam = () => {
