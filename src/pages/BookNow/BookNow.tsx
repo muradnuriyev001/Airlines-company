@@ -7,7 +7,7 @@ import BookCard from "./BookCard/BookCard";
 import Checkout from "./Checkout/Checkout";
 
 const BookNow = () => {
-  usePageTitle("AirLine Jet | Book Now");
+  usePageTitle("Azerline Jet | Book Now");
 
   const bookingSelector = useSelector(selectBooking);
   const bookingArray = Array.isArray(bookingSelector) ? bookingSelector : [];

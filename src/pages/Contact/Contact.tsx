@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm/ContactForm";
 import ContactInfo from "./ContactInfo/ContactInfo";
 
 const Contact = () => {
-  usePageTitle("AirLine Jet | Contact")
+  usePageTitle("Azerline Jet | Contact")
   return (
     <div>
       <ContactBanner />

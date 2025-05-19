@@ -26,20 +26,20 @@ const ContactInfo = () => {
         <p>
           Questions about booking flights, inquiries about our services, or
           feedback on your travel experience? Reach out to us! Our team at
-          Airline is here to assist you.
+          Azerline is here to assist you.
         </p>
         <div className={c.contact}>
           <div className={c.contactInfo}>
             <FaPhoneAlt />
-            <span>0(800) 890-90-609</span>
+            <span>+994 50 000 00 00</span>
           </div>
           <div className={c.contactInfo}>
             <MdEmail />
-            <span>info@airline.com</span>
+            <span>info@azerline.com</span>
           </div>
           <div className={c.contactInfo}>
             <MdLocationOn />
-            <span>1337 Street, Kampala, Uganda</span>
+            <span>25 Azadliq Avenue, Baku, Azerbaijan</span>
           </div>
         </div>
         <div className={c.icons}>
@@ -52,7 +52,7 @@ const ContactInfo = () => {
       <div className={c.openingHours}>
         <h1>Opening Hours</h1>
         <p>
-          Our team at AirLine is available to assist. Our operating hours are:
+          Our team at Azerline is available to assist. Our operating hours are:
         </p>
         <div className={c.week}>
           {hours.map((hour, i) => (

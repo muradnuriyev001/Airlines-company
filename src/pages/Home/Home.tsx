@@ -8,7 +8,7 @@ import HomeTeam from "./HomeTeam/HomeTeam";
 import HomeVideo from "./HomeVideo/HomeVideo";
 
 const Home = () => {
-  usePageTitle("AirLine Jet | Home")
+  usePageTitle("Azerline Jet | Home")
   return (
     <div>
       <HomeBanner />

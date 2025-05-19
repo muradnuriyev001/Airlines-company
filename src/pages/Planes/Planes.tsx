@@ -8,7 +8,7 @@ import HomeOffer from "../Home/HomeOffer/HomeOffer";
 import usePageTitle from "../../hooks/usePageTitle";
 
 const Planes = () => {
-  usePageTitle("AirLine Jet | Planes");
+  usePageTitle("Azerline Jet | Planes");
   return (
     <>
       <PlanesBanner />

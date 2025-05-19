@@ -8,7 +8,7 @@ import AboutOurHistory from "./AboutOurHistory/AboutOurHistory";
 import AboutInfo from "./AboutInfo/AboutInfo";
 
 const About = () => {
-  usePageTitle("AirLine Jet | About");
+  usePageTitle("Azerline Jet | About");
   return (
     <div>
       <AboutBanner />

@@ -6,7 +6,7 @@ const NotFound = () => {
   const navigate = useNavigate();
   const goHome = () => navigate("/", { replace: true });
 
-  usePageTitle("AirLine | Not Found");
+  usePageTitle("Azerline | Not Found");
   return (
     <div className={c.notFound}>
       <p>404 - Page Not Found</p>

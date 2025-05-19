@@ -8,7 +8,7 @@ const HomeBanner = () => {
   return (
     <div className={c.homeBanner}>
       <div className={c.bannerInfo}>
-        <p className={c.bannerText1}>Welcome To Our AirLine!</p>
+        <p className={c.bannerText1}>Welcome To Our Airline!</p>
         <p className={c.bannerText2}>Luxury Experience With Our Private Jet</p>
         <span className={c.bannerText3}>
           There are many variations of passages available but the majority have
