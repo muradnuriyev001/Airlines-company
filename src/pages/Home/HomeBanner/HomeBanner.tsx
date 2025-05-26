@@ -8,12 +8,14 @@ const HomeBanner = () => {
   return (
     <div className={c.homeBanner}>
       <div className={c.bannerInfo}>
-        <p className={c.bannerText1}>Welcome To Our Airline!</p>
-        <p className={c.bannerText2}>Luxury Experience With Our Private Jet</p>
+        <p className={c.bannerText1}>AzerLine – Where Luxury Takes Flight</p>
+        <p className={c.bannerText2}>
+          Enjoy an Exclusive Private Jet Experience
+        </p>
         <span className={c.bannerText3}>
-          There are many variations of passages available but the majority have
-          suffered alteration in some form by injected humour or randomised
-          words which don't look even slightly believable.
+          Discover a new standard in air travel with our premium private jet
+          services. Designed for discerning travelers, our fleet offers the
+          perfect blend of sophistication, privacy, and world-class comfort.
         </span>
         <div className={c.bannerButtons}>
           <NavLink className={c.contact} to={"/contact"}>

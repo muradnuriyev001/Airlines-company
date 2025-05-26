@@ -42,9 +42,7 @@ const HeaderList = () => {
             <NavLink to={"/"}>
               <li>Home</li>
             </NavLink>
-            <NavLink to={"/about"}>
-              <li>About</li>
-            </NavLink>
+
             <NavLink to={"/planes"}>
               <li>Planes</li>
             </NavLink>

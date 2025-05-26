@@ -30,14 +30,16 @@ a {
 }
 
 :root {
-  --blue-color: #19232d;
-  --blue-color2: #2c3742;
-  --blue-color3: #1f2e3c;
-  --blue-color4: #364350;
-  --orange-color: #bea47b;
-  --orange-color2: #dcbb87;
-  --white-color: #fdfdfd;
-  --white-color2: #f5fbff;
+  --blue-color: #0b2e2f; /* Deep emerald green */
+  --blue-color2: #134240; /* Dark teal/green with richness */
+  --blue-color3: #3a6151; /* Muted jade green */
+  --blue-color4: #587865; /* Soft mossy green for accents */
+
+  --orange-color: #bfa46f; /* Antique gold */
+  --orange-color2: #d9c78a; /* Pale gold / champagne */
+
+  --white-color: #f8f5f0; /* Ivory cream */
+  --white-color2: #e9e4dc; /* Soft beige/light stone */
 
   --swiper-pagination-color: orange;
 }
